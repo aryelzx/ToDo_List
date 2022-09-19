@@ -1,0 +1,144 @@
+/* all */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: rgb(190, 189, 111);
+    box-sizing: border-box;
+}
+/* body */
+body{
+    background-image: url("/img/bg.jpg");
+    background-position: center;
+    background-size: cover; /*adapta a imagem para a tela toda*/
+}
+/* buttons */
+button {
+    background-color: #FDFDFD;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #cac378;
+}
+button:hover > i{
+    color: #fff;
+}
+button i{
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none; /*cancela a sobreboposicao do icon sobre o botao*/
+}
+#cancel-edit-btn{
+    margin-top: 1rem;
+    color:#333;
+    border-radius: 2rem;
+}
+#cancel-edit-btn:hover{
+    color:#FDFDFD;
+}
+/* input e select */
+input, select{
+    padding: 0.25rem 0.5rem;
+}
+select{
+    color:#333;
+}
+/* esconder */
+.hide{
+    display: none;
+}
+/* todo header */
+.todo-container{
+    max-width: 450px; /*largura max*/
+    margin: 3rem auto; /*auto = centraliza*/
+    background-color: #25295f;
+    border-radius:15px;
+    padding: 1.5rem;
+    
+}
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid;
+}
+/*todo form*/
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid;
+}
+#todo-form p, #edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+}
+.form-control input{
+    margin-right: 0.3rem;
+}
+/* todo toolbar */
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid;
+    display: flex;
+}
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+#search{
+    border-right: 1px solid;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+/* pesquisar */
+#search form{
+display:flex;
+}
+#search input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+/* lista */
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid;
+    transition: .3s;
+}
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+.todo button{
+    margin-left:0.4rem;
+}
+.done{
+    background-color: #cac378;
+}
+.done h3{
+    color: #333;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+
+
+
