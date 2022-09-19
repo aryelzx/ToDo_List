@@ -1,0 +1,3 @@
+# ToDo_List
+lista de tarefas (sem localstorage)
+baseado na aula sobre projetos para iniciantes do canal hora de codar...
